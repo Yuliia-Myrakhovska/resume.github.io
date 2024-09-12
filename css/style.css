@@ -1,13 +1,14 @@
 @import url("reset.css");
 
 body {
-	margin:0;
 	background:#15151e;
 	overflow-x:hidden;
 }
 
 .section-header {
     background-color: blue;
+    height: 100vh;
+	width: 100vw;
 }
 
 .races {

@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+body {
+	margin:0;
+	background:#15151e;
+	overflow-x:hidden;
+}
+
+.section-header {
+    background-color: blue;
+}
+
+.races {
+	width:fit-content;
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+.section-scroll-item {
+	flex-shrink:0;
+    height: 100vh;
+	width: 100vw;
+	margin:0;	
+}
+
+.section-main-first {
+    background-color: rgb(0, 217, 255);
+}
+
+.section-main-second {
+    background-color: rgb(255, 230, 0);
+}
+
+.section-main-third {
+    background-color: rgb(0, 255, 76);
+}
+
+.section-main-fourth {
+    background-color: rgb(255, 0, 55);
+}
+/* 
+.section-main-first,
+.section-main-second,
+.section-main-third,
+.section-main-fourth {
+    font-size:30vw;
+	flex-shrink:0;
+	padding-right:0.3em;
+	padding-left:0.3em;
+	
+	margin:0;
+} */
+
+
+
+
+

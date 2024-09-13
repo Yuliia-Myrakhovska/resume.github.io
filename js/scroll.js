@@ -8,7 +8,7 @@ function getScrollAmount() {
 
 const tween = gsap.to(races, {
 	x: getScrollAmount,
-	duration: 1,
+	duration: 8,
 	ease: "none",
 });
 

@@ -2,7 +2,7 @@
 
 body {
 	background:#15151e;
-	overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .section-header {
@@ -12,7 +12,6 @@ body {
 }
 
 .races {
-	width:fit-content;
 	display:flex;
 	flex-wrap:nowrap;
 }
@@ -51,6 +50,13 @@ body {
 	
 	margin:0;
 } */
+
+@media screen and (max-width: 768px) {
+    .races {
+        display:block;
+    }
+
+}
 
 
 

@@ -1,25 +1,23 @@
-const races = document.querySelector(".races");
-console.log(races.offsetWidth)
+// gsap.registerPlugin(ScrollTrigger);
 
-function getScrollAmount() {
-	let racesWidth = races.scrollWidth;
-	return -(racesWidth - window.innerWidth);
-}
+// const races = document.querySelector(".races");
+// console.log(races.offsetWidth);
 
-const tween = gsap.to(races, {
-	x: getScrollAmount,
-	duration: 8,
-	ease: "none",
-});
+// function getScrollAmount() {
+//   let racesWidth = races.scrollWidth;
+//   return -(racesWidth - window.innerWidth);
+// }
 
-
-ScrollTrigger.create({
-	trigger:".racesWrapper",
-	start:"top 0%",
-	end: () => `+=${getScrollAmount() * -1}`,
-	pin:true,
-	animation:tween,
-	scrub:1,
-	invalidateOnRefresh:true
-})
-
+// gsap.to(".races", {
+//   x: getScrollAmount,
+//   duration: 5,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".racesWrapper",
+//     start: "top",
+//     end: () => `+=${getScrollAmount() * -1}`,
+//     pin: true,
+//     scrub: 1.5,
+//     invalidateOnRefresh: true,
+//   },
+// });

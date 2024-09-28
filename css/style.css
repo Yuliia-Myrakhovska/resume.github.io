@@ -301,12 +301,9 @@ body {
   .title-section {
     font-size: 22px;
   }
+
+  .portfolio__wrapper {
+    cursor:none;
+  }
+  
 }
-
-/* @media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 1000px) and (min-width: 768px) {
-
-  } */

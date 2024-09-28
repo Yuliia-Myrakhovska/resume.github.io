@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "copy-icons": "cp -r node_modules/bootstrap-icons/font/bootstrap-icons.css ./assets/icons"
-  }
-}

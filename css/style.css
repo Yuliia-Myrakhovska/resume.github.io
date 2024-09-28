@@ -4,19 +4,20 @@
 
 html,
 body {
-  /* background: linear-gradient(135deg, #130220, #140420, #0a0514, #0e0720, #130b27, #0f0a24, #12123a, #170e24);*/
 
   background: linear-gradient(
-    135deg,
-    rgb(15 23 42),
-    rgb(17, 25, 44),
-    rgb(19 27 46),
-    rgb(21 29 48),
-    rgb(23 31 50),
-    rgb(25 33 52),
-    rgb(27 35 54),
-    rgb(29 37 56)
-  );
+    145deg,
+    rgb(15, 42, 31) 0%,
+    rgb(18, 52, 38) 20%,
+    rgb(21, 68, 49) 40%,
+    rgb(21, 80, 56) 60%,
+    rgb(18, 102, 68) 80%,
+    rgb(17, 129, 84) 100%,
+    rgb(21, 80, 56) 80%,
+    rgb(21, 68, 49) 60%,
+    rgb(18, 52, 38) 40%,
+    rgb(15, 42, 31) 20%
+);
 
   scroll-behavior: smooth;
   color: #bfbfbf;
@@ -57,6 +58,21 @@ body {
 
 .section {
   height: 100vh;
+
+  display: flex;
+}
+
+.title-text-developer {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.subtitle-text-developer {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .nav-item-link {
@@ -92,38 +108,106 @@ body {
 .nav-item-link.active .title-nav-item {
   padding-left: 95px;
   opacity: 1;
+  transition: 0.5s ease, opacity 0.5s ease;
 }
 
 .nav-item-link.active .decoration-nav-link {
   width: 80px;
   opacity: 1;
+  transition: 0.5s ease, opacity 0.5s ease;
 }
 
 .nav-item-link:hover .title-nav-item:not(.active) {
   padding-left: 95px;
   opacity: 1;
+  transition: 0.5s ease, opacity 0.5s ease;
 }
 
 .nav-item-link:hover .decoration-nav-link:not(.active) {
   width: 80px;
   opacity: 1;
+  transition: 0.5s ease, opacity 0.5s ease;
 }
 
-/* .section-main-first {
-  background-color: rgb(0, 217, 255);
+.contact__wrapper {
+  display: flex;
+  gap: 30px;
 }
 
-.section-main-second {
-  background-color: rgb(255, 230, 0);
+.contact__wrapper a {
+  font-size: 30px;
+  color:#bfbfbf;
 }
 
-.section-main-third {
-  background-color: rgb(0, 255, 76);
+.container-content {
+  align-self: center;
 }
 
-.section-main-fourth {
-  background-color: rgb(255, 0, 55);
-} */
+.about-text {
+  text-align: justify; 
+  /* align-self: center;  */
+  margin-bottom: 20px;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+
+.title-section {
+  display: none;
+}
+
+.wrapper-education-info:last-child {
+  margin-top: 20px;
+}
+
+.name-speciality {
+ font-size: 20px;
+ font-weight: 600;
+ margin-bottom: 20px;
+}
+
+.name-place-education {
+  margin-bottom: 10px;
+}
+
+.years {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 950px) {
+  .container-site {
+    flex-direction: column;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header,
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .section {
+    height: 100%;
+    margin-bottom: 100px;
+  }
+
+  .section:last-child {
+    margin: 0;
+  }
+
+  .title-section {
+    display: block;
+  }
+}
 
 /* @media screen and (max-width: 768px) {
 

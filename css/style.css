@@ -294,6 +294,21 @@ body {
   .portfolio__wrapper {
     cursor:none;
   }
+
+  .portfolio__wrapper {
+    display: block;
+    padding: 0;
+  }
+
+  .portfolio__img {
+    width: 60%;
+    height: 70%; 
+    margin-bottom: 20px;
+  }
+  
+  .portfolio__info {
+    width: 100%;
+  }
 }
 
 @media (hover:hover) {
